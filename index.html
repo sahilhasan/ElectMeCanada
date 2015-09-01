@@ -22,7 +22,7 @@
         var arrLines = strRawContents.split("?");
         for (var i = 0; i < arrLines.length; i++) {
              var curLine = arrLines[i].split(",");
-             var tableRef = document.getElementById('tbl').getElementsByTagName('tbody')[0];
+             var tableRef = document.getElementById('tbl1').getElementsByTagName('tbody')[0];
              var newRow   = tableRef.insertRow(tableRef.rows.length);
              var newCell  = newRow.insertCell(0);
              newCell = "testing";
@@ -59,7 +59,7 @@
           <div id="users">
             <input class="search" placeholder="Search" />
             <button class="sort" data-sort="name">Sort</button>
-            <table class ="tbl">
+            <table class ="tbl" id = "tbl1">
               <tbody class="list">
                 
               </tbody>
