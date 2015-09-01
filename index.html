@@ -22,10 +22,10 @@
         var arrLines = strRawContents.split("?");
         for (var i = 0; i < arrLines.length; i++) {
              var curLine = arrLines[i].split(",");
-             var ul = document.getElementById('table');
-             var li = document.createElement("li");
-             li.appendChild('<h1 class="job">' + curLine[0] + '</h1> <h2 class = "win">' + curLine[1] + '</h2><p class="data">' + curLine[2] + '</p>');
-              ul.appendChild(li);
+             var tableRef = document.getElementById('tbl').getElementsByTagName('tbody')[0];
+             var newRow   = tableRef.insertRow(tableRef.rows.length);
+             var newCell  = newRow.insertCell(0);
+             newCell = "testing";
               // document.getElementById('table').innerHTML = '<li>
               //   <h1 class="job">' + curLine[0] + '</h1>
               // <h2 class = "win">' + curLine[1] + '</h2>
@@ -59,9 +59,11 @@
           <div id="users">
             <input class="search" placeholder="Search" />
             <button class="sort" data-sort="name">Sort</button>
-            <ul class="list" id="table">
-              
-            </ul>
+            <table class ="tbl">
+              <tbody class="list">
+                
+              </tbody>
+            </table>
           </div>
           
   
