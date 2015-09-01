@@ -1,1 +1,5 @@
-console.log('This would be the main JS file.');
+var options = {
+  valueNames: [ 'job', 'winp' ]
+};
+
+var userList = new List('users', options);
