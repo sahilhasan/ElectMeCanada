@@ -11,10 +11,25 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>ElectMeCanada</title>
+    <script type="text/javascript">
+      function LoadFile() {
+        var oFrame = document.getElementById("frmFile");
+        var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+        while (strRawContents.indexOf("\r") >= 0)
+            strRawContents = strRawContents.replace("\r", "");
+        var arrLines = strRawContents.split("?");
+        alert("File " + oFrame.src + " has " + arrLines.length + " lines");
+        for (var i = 0; i < arrLines.length; i++) {
+             var curLine = arrLines[i];
+               alert("Line #" + (i + 1) + " is: '" + curLine + "'");
+              }
+      }
+    </script> 
   </head>
 
   <body>
     <div id="container">
+      <iframe id="frmFile" src="out.txt" onload="LoadFile();" style="display: none;"></iframe>
       <div class="inner">
 
         <header>
