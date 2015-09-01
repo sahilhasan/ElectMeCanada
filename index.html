@@ -26,8 +26,10 @@
              var newRow   = tableRef.insertRow(tableRef.rows.length);
              var job  = newRow.insertCell(0);
              job.innerHTML = curLine[0];
+             job.className = 'job';
              var winP  = newRow.insertCell(1);
              winP.innerHTML = curLine[1] + "%";
+            winP.className = 'winp';
              var data  = newRow.insertCell(2);
              data.innerHTML = "Run in " + curLine[2] + " as a member of " + curLine[3] + " in " + curLine[4];
               // document.getElementById('table').innerHTML = '<li>
