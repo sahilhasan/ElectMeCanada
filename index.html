@@ -22,7 +22,11 @@
         var arrLines = strRawContents.split("?");
         for (var i = 0; i < arrLines.length; i++) {
              var curLine = arrLines[i].split(",");
-               
+               document.getElementById('table').innerHTML = '<li>
+      <h1 class="job">' + curLine[0] + '</h1>
+      <h2 class = "win">' + curLine[1] + '</h2>
+      <p class="data">' + curLine[2] + '</p>
+    </li>';
               }
       }
       
@@ -50,9 +54,12 @@
         <section id="main_content">
           <div id="users">
             <input class="search" placeholder="Search" />
-              <button class="sort" data-sort="name">
-                  Sort
-              </button>
+            <button class="sort" data-sort="name">Sort</button>
+            <ul class="list" id="table">
+              
+            </ul>
+          </div>
+          
   
         </section>
 
