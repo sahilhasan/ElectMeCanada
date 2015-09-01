@@ -12,7 +12,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>ElectMeCanada</title>
-    <script src="http://listjs.com/no-cdn/list.js"></script>
+  
     <script type="text/javascript">
       function LoadFile() 
       {
@@ -40,11 +40,7 @@
               //   </li>';
               }
       }
-      var options = {
-        valueNames: [ 'job', 'winp' ]
-        };
-
-    var userList = new List('users', options);
+     
       
     </script> 
   </head>
@@ -71,13 +67,14 @@
           <div id="users">
             <input class="search" placeholder="Search" />
             <button class="sort" data-sort="name">Sort</button>
-            <table class ="tbl" id = "tbl1">
+            <table id = "tbl1">
               <tbody class="list">
                 
               </tbody>
             </table>
           </div>
-          
+            <script src="http://listjs.com/no-cdn/list.js"></script>
+              <script src="javascripts/main.js"></script>
   
         </section>
 
