@@ -24,8 +24,12 @@
              var curLine = arrLines[i].split(",");
              var tableRef = document.getElementById('tbl1').getElementsByTagName('tbody')[0];
              var newRow   = tableRef.insertRow(tableRef.rows.length);
-             var newCell  = newRow.insertCell(0);
-             newCell.innerHTML = "testing";
+             var job  = newRow.insertCell(0);
+             job.innerHTML = curLine[0];
+             var winP  = newRow.insertCell(1);
+             winP.innerHTML = curLine[1] + "%";
+             var data  = newRow.insertCell(2);
+             data.innerHTML = "Run in " + curLine[2] + " as a member of " + curLine[3] + " in " + curLine[4];
               // document.getElementById('table').innerHTML = '<li>
               //   <h1 class="job">' + curLine[0] + '</h1>
               // <h2 class = "win">' + curLine[1] + '</h2>
