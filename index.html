@@ -18,10 +18,9 @@
         while (strRawContents.indexOf("\r") >= 0)
             strRawContents = strRawContents.replace("\r", "");
         var arrLines = strRawContents.split("?");
-        alert("File " + oFrame.src + " has " + arrLines.length + " lines");
         for (var i = 0; i < arrLines.length; i++) {
-             var curLine = arrLines[i];
-               alert("Line #" + (i + 1) + " is: '" + curLine + "'");
+             var curLine = arrLines[i].split(",");
+               alert(curLine[1]);
               }
       }
     </script> 
