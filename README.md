@@ -9,8 +9,8 @@ Used preparsed data (parsed using a java project. See other projects on my githu
 
 # Source Files 
 -CanadianElection: Contains Java parser and sorter both bin and src  <br />
-  -Person.java<br />
-  -MainParser.java<br />
+---->Person.java<br />
+---->MainParser.java<br />
 -index.html: Main site html/javascript <br />
 -out.txt: Post-parsing data used in site  <br />
 
