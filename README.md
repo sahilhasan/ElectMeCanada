@@ -15,5 +15,5 @@ Used preparsed data (parsed using a java project. See other projects on my githu
 -out.txt: Post-parsing data used in site  <br />
 
 # Latest Version/See also
-Lyse is our more general form data parser and organizer. 
+Lyze is our more general form data parser and organizer. 
 
